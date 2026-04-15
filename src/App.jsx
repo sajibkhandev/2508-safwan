@@ -1,8 +1,14 @@
 import React from 'react'
+import Navber from './layouts/Navber'
+
 
 const App = () => {
   return (
-    <div>App</div>
+    <div >
+
+      <Navber/>
+      
+    </div>
   )
 }
 
