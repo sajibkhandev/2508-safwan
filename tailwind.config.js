@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        "jost":["Jost", "sans-serif"]
+        "jost":["Jost", "sans-serif"],
+        "vol":["Vollkorn", "serif"],
       }
       ,
       colors:{
@@ -17,10 +18,15 @@ export default {
       ,
       maxWidth:{
         'container':"1170px"
+      },
+       backgroundImage: {
+        'banner': "url('./src/assets/banner.jpg')",
       }
     },
   },
   plugins: [],
 }
+
+
 
 
