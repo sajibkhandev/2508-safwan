@@ -2,6 +2,7 @@ import React from 'react'
 import Navber from './layouts/Navber'
 import Banner from './layouts/Banner'
 import Service from './layouts/Service'
+import About from './layouts/About'
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Navber/>
       <Banner/>
       <Service/>
+      <About/>
       
     </div>
   )
