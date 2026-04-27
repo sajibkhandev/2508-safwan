@@ -7,22 +7,31 @@ import Heading from "../components/Heading";
 import Button from "../components/Button";
 import ImageOne from "../assets/image.png";
 import ImageTwo from "../assets/image2.png";
+import Progressbar from "../components/Progressbar";
 
 const About = () => {
   return (
     <section>
       <Container>
-        <Flex>
+        <Flex className='items-center'>
           <div className="w-1/2">
             <Flex className="justify-between">
-              <Image src={ImageOne} />
+            <div className="w-[370px] h-[480px] ">
+
+              <Image className='w-full' src={ImageOne} />
+            </div>
               <div className="flex flex-col justify-between">
-                <Image src={ImageTwo} />
-                <Image src={ImageTwo} />
+                <div className="w-[170px] h-[225px] ">
+                    <Image className='w-full' src={ImageTwo} />
+                </div>
+                <div className="w-[170px] h-[225px] ">
+                   <Image className='w-full' src={ImageTwo} />
+                </div>
+              
               </div>
             </Flex>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 pl-[30px]">
             <SubHeading text="About Me" />
             <Heading text="I Enjoy Solving Problems With Scalable Solutions" />
             <p>
@@ -37,6 +46,16 @@ const About = () => {
             <Button text="Download CV"/>
           </div>
         </Flex>
+
+        <Flex className='justify-between my-20'>
+          <Progressbar text="Graphic Design" number="70%"/>
+          <Progressbar text="Graphic Design" number="40%"/>
+          <Progressbar text="Graphic Design" number="90%"/>
+          <Progressbar text="Graphic Design" number="60%"/>
+       
+        </Flex>
+
+     
       </Container>
     </section>
   );
