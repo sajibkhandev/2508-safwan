@@ -8,12 +8,12 @@ import IconOne from '../assets/service-icon.png'
 
 const Service = () => {
   return (
-    <section className='pt-[220px] pb-[120px]'>
+    <section className='px-3 md:px-0 pt-[100px] md:pt-[220px] pb-[50px] md:pb-[120px]'>
      <Container>
           <SubHeading className='text-center' text="MY SERVICES"/>
-          <Heading className="w-[517px] mx-auto text-center pt-3" text="Provide Wide Range of Digital Services"/>
+          <Heading className="md:w-[517px] mx-auto text-center pt-3" text="Provide Wide Range of Digital Services"/>
 
-        <Flex className="justify-between pt-10">
+        <Flex className="justify-center  md:justify-between flex-wrap pt-10">
           
           <CardService icon={IconOne} title="Ui/Ux Design" text="Dolor repellendus tempo ribus aue quibusdam offi ciis debitis rerum na aibus minima veniam."/>
           <CardService icon={IconOne} title="Mobile App Design" text="Dolor repellendus tempo ribus aue quibusdam offi ciis debitis rerum na aibus minima veniam."/>

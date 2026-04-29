@@ -5,6 +5,8 @@ import Service from './layouts/Service'
 import About from './layouts/About'
 import Portfolio from './layouts/Portfolio'
 import Contant from './layouts/Contant'
+import Client from './layouts/Client'
+import Footer from './layouts/Footer'
 
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
       <About/>
       <Portfolio/>
       <Contant/>
+      <Client/>
+      <Footer/>
       
     </div>
   )

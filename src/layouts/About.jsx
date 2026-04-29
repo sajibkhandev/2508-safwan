@@ -13,25 +13,25 @@ const About = () => {
   return (
     <section>
       <Container>
-        <Flex className='items-center'>
-          <div className="w-1/2">
-            <Flex className="justify-between">
-            <div className="w-[370px] h-[480px] ">
+        <Flex className='!block md:!flex items-center '>
+          <div className="md:w-1/2">
+            <Flex className="!block md:!flex md:justify-between">
+            <div className="w-[300px] h-[400px] md:w-[370px] md:h-[480px] mx-auto">
 
               <Image className='w-full' src={ImageOne} />
             </div>
               <div className="flex flex-col justify-between">
-                <div className="w-[170px] h-[225px] ">
+                <div className="mx-auto w-[300px] h-[400px] md:w-[170px]  md:h-[225px] ">
                     <Image className='w-full' src={ImageTwo} />
                 </div>
-                <div className="w-[170px] h-[225px] ">
+                <div className="mx-auto pt-4 md:pt-0 w-[300px] h-[400px] md:w-[170px] md:h-[225px] ">
                    <Image className='w-full' src={ImageTwo} />
                 </div>
               
               </div>
             </Flex>
           </div>
-          <div className="w-1/2 pl-[30px]">
+          <div className="md:w-1/2 pt-14 md:pt-0 pl-[30px]">
             <SubHeading text="About Me" />
             <Heading text="I Enjoy Solving Problems With Scalable Solutions" />
             <p>
@@ -47,7 +47,11 @@ const About = () => {
           </div>
         </Flex>
 
-        <Flex className='justify-between my-20'>
+
+
+
+
+        <Flex className='justify-center flex-wrap md:justify-between my-20'>
           <Progressbar text="Graphic Design" number="70%"/>
           <Progressbar text="Graphic Design" number="40%"/>
           <Progressbar text="Graphic Design" number="90%"/>

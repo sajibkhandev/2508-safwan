@@ -9,21 +9,21 @@ import ContactImage from '../assets/contact.png'
 
 const Contant = () => {
   return (
-    <section className='py-[120px]'>
+    <section className='py-[120px] px-3 md:px-0'>
      <Container>
-          <Flex>
-               <div className='w-5/12'>
-               <Image src={ContactImage}/>
+          <Flex className="flex-wrap">
+               <div className='md:w-5/12'>
+               <Image className='mx-auto w-[60%] md:w-auto' src={ContactImage}/>
                </div>
-               <div className='w-7/12'>
+               <div className='md:w-7/12 pt-10 md:pt-0'>
                          <SubHeading text="Get In Touch"/>
                          <Heading text="Feel Free to Contact"/>
 
-                        <Flex className='flex-wrap justify-between gap-y-14'>
-                          <input className='w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Enter Name'/>
-                         <input className='w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Enter Email'/>
-                         <input className='w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Phone'/>
-                         <input className='w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Password'/>
+                        <Flex className='flex-wrap justify-between gap-y-14 '>
+                          <input className='w-full md:w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Enter Name'/>
+                         <input className='w-full md:w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Enter Email'/>
+                         <input className='w-full md:w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Phone'/>
+                         <input className='w-full md:w-[46%] outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Password'/>
                          <input className='w-full outline-none border-b border-[#00413d66] py-3 ' type="text" placeholder='Subject'/>
                       
                         </Flex>
